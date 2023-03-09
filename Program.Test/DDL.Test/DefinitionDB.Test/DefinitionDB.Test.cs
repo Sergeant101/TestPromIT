@@ -9,11 +9,11 @@ public class DefinitionDBTest
     private string wrongPathTestDB = "C:\\Tamp\\";
 
     [Fact]
-    public void TestCreateDB()
+    public async void TestCreateDB()
     {
         //Arrage
         DefinitionDB definitionDB = new DefinitionDB(pathTestDB, nameTestDB);
-        var retval = definitionDB.CreateDB();
+        var retval = await definitionDB.CreateDB();
 
         //Act
         var Ok = 0;
@@ -23,11 +23,11 @@ public class DefinitionDBTest
     }
 
     [Fact]
-    public void TestExistsDB()
+    public async void TestExistsDB()
     {
         //Arrage
         DefinitionDB definitionDB = new DefinitionDB(pathTestDB, nameTestDB);
-        var retval = definitionDB.CreateDB();
+        var retval = await definitionDB.CreateDB();
 
         //Act
         var Ok = 4;
@@ -37,11 +37,11 @@ public class DefinitionDBTest
     }
 
     [Fact]
-    public void TestWrongPathDB()
+    public async void TestWrongPathDB()
     {
         //Arrage
         DefinitionDB definitionDB = new DefinitionDB(wrongPathTestDB, nameTestDB);
-        var retval = definitionDB.CreateDB();
+        var retval = await definitionDB.CreateDB();
 
         //Act
         var Ok = 6;
@@ -51,7 +51,7 @@ public class DefinitionDBTest
     }
     
     [Fact]
-    public void TestDeleteDB()
+    public async void TestDeleteDB()
     {
         //Arrage
         DefinitionDB definitionDB = new DefinitionDB(pathTestDB, nameTestDB);

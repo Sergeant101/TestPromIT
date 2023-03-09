@@ -5,29 +5,39 @@ using System.Diagnostics;
 using static System.Console;
 
 [assembly: InternalsVisibleTo("UI")]
+[assembly: InternalsVisibleTo("BL")]
 [assembly: InternalsVisibleTo("DDL.Test")]
 [assembly: InternalsVisibleTo("DefinitionDB.Test")]
 
 namespace DDL
 {
-    internal class DefinitionDB: ICreateDB 
+    internal partial class DefinitionDB: ICreateDB 
     {
         public DefinitionDB(string _name)
         {
             NameDB = _name;
+            connection += SourceConnection + StartConnection;
+            ExistsConnection += SourceConnection + ";database=" + NameDB + ";";            
+
+            //Debug Delete
+            WriteLine(connection);
+            WriteLine(ExistsConnection);
         }
 
-        public DefinitionDB(string _path, string _name)
+        public DefinitionDB(string _path, string _name):this(_name)
         {
             PathDB = _path;
-            NameDB = _name;
         }
 
         private readonly string PathDB = "C:\\Temp\\";
         private readonly string NameDB;
-        private readonly string connection = @"Data Source=.\SQLEXPRESS;Integrated security=True;TrustServerCertificate=true;database=master";
-
-        public int CreateDB()
+        public string GetName {get => NameDB; }
+        private readonly string connection = null!;
+        private readonly string SourceConnection = @"Data Source=.\SQLEXPRESS;Integrated security=True;TrustServerCertificate=true;MultipleActiveResultSets=True";
+        private readonly string StartConnection = ";database=master;";
+        private readonly string ExistsConnection = null!;
+        
+        public async ValueTask<int> CreateDB()
         {
             var retval = 1;
 
@@ -44,6 +54,11 @@ namespace DDL
 
                     retval = 0;
                 }
+                
+                await SpCreate(spCreateRoot);
+                await SpCreate(spAddTable);
+                await SpCreate(spSelectWord);
+
             }
 
             catch(Microsoft.Data.SqlClient.SqlException ex)
@@ -62,11 +77,7 @@ namespace DDL
                     default:
                         retval = 3;
                         break;
-                }
-
-                //Debuging delete
-                WriteLine(ex.Number);
-                    
+                }                    
             }
 
             catch
@@ -88,6 +99,7 @@ namespace DDL
                     {
                         var sqlCommandText  = $"DROP DATABASE {NameDB}"; 
                         var sqlCommand      = new SqlCommand(sqlCommandText, ConnCreateDB);
+
                         ConnCreateDB.Open();
                         sqlCommand.ExecuteNonQuery();
                         ConnCreateDB.Close();
@@ -117,7 +129,5 @@ namespace DDL
 
             return paramEnvironment;
         }
-
-
     }
 }

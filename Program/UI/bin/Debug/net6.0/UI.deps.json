@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "UI/1.0.0": {
         "dependencies": {
+          "BL": "1.0.0",
           "DDL": "1.0.0"
         },
         "runtime": {
@@ -404,6 +405,14 @@
           }
         }
       },
+      "BL/1.0.0": {
+        "dependencies": {
+          "DDL": "1.0.0"
+        },
+        "runtime": {
+          "BL.dll": {}
+        }
+      },
       "DDL/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.0"
@@ -699,6 +708,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DDL/1.0.0": {
       "type": "project",

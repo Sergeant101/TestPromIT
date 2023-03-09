@@ -3,6 +3,8 @@ namespace DDL.Resources.Interface
 {
     public interface ICreateDB
     {
-        public int CreateDB();
+        public ValueTask<int> CreateDB();
+        public string GetName {get; }
     }
+
 }

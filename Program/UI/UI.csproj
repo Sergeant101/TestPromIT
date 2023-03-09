@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DDL\DDL.csproj" />
+    <ProjectReference Include="..\BL\BL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -50,3 +50,5 @@ C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\obj\Debug\net6.0\refint\UI.dll
 C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\obj\Debug\net6.0\UI.pdb
 C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\obj\Debug\net6.0\UI.genruntimeconfig.cache
 C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\obj\Debug\net6.0\ref\UI.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\bin\Debug\net6.0\BL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\UI\bin\Debug\net6.0\BL.pdb

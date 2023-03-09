@@ -586,6 +586,19 @@
           }
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DDL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "DDL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1883,6 +1896,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "DDL/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DDL/DDL.csproj",
@@ -1891,6 +1909,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BL >= 1.0.0",
       "DDL >= 1.0.0"
     ]
   },
@@ -1921,6 +1940,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj": {
+              "projectPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj"
+            },
             "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj": {
               "projectPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj"
             }

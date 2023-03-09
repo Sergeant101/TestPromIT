@@ -1,0 +1,15 @@
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\bin\Debug\net6.0\BL.deps.json
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\bin\Debug\net6.0\BL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\bin\Debug\net6.0\BL.pdb
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.csproj.AssemblyReference.cache
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.AssemblyInfoInputs.cache
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.AssemblyInfo.cs
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.csproj.CoreCompileInputs.cache
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\refint\BL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.pdb
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\ref\BL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\bin\Debug\net6.0\DDL.dll
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\bin\Debug\net6.0\DDL.pdb
+C:\_MAIN_\Programs\Code\TestPromIT\Program\BL\obj\Debug\net6.0\BL.csproj.CopyComplete
