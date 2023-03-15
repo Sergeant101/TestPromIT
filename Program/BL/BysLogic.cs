@@ -12,31 +12,37 @@ internal class BysLogic
 
     public BysLogic()
     {
-        mode = "v";
+        mode = Mode.Viewer;
     }
 
     public BysLogic(ICreateDB _createDB)
     {
         createDB = _createDB;
-        mode = "c";
+        mode = Mode.CreateDataBase;
     }
 
     public BysLogic(IDataDefinitionDictionary _updateDB)
     {
         updateDB = _updateDB;
-        mode = "d";
+        mode = Mode.CreateDictionary;
     }
 
-    private readonly string mode;
-    private readonly ICreateDB createDB;
+    enum Mode
+    {
+        CreateDataBase,
+        CreateDictionary,
+        Viewer
+    }
+    private readonly Mode mode;
+    private readonly ICreateDB createDB = null!;
 
-    private readonly IDataDefinitionDictionary updateDB;
+    private readonly IDataDefinitionDictionary updateDB = null!;
 
     internal async ValueTask<int> CreateNewDB()
     {
         var retval = -1;
 
-        if(mode == "c")
+        if(mode == Mode.CreateDataBase)
         {
             retval = 1;
 
@@ -49,17 +55,15 @@ internal class BysLogic
 
         return retval;
     }
-
-
-    internal async ValueTask<int> CreateNewDictionary(string nameDictionary)
+    internal async ValueTask<int> CreateNewDictionary(string nameSP, string nameDictionary)
     {
         var retval = -1;
 
-        if(mode == "d")
+        if((mode == Mode.CreateDictionary) && (nameSP != null) && (nameDictionary != null))
         {
             retval = 1;
 
-            if(await updateDB.CreateDictionary(nameDictionary) == 0)
+            if(await updateDB.CreateDictionary(nameSP, nameDictionary) == 0)
             {
                 retval = 0;
             }  

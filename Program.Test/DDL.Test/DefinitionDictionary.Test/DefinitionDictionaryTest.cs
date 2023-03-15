@@ -9,8 +9,8 @@ public class DefinitionDictionaryTest
     public async void Test1()
     {
         // Arrage
-        DefinitionDictionary definitionDictionary = new DefinitionDictionary("UnitTest");
-        var actual = await definitionDictionary.CreateDictionary("Test");
+        DefinitionDictionary definitionDictionary = new DefinitionDictionary("UnitTestDB");
+        var actual = await definitionDictionary.CreateDictionary(DefinitionDB._nameSpCreateRoot,"Test");
 
         //Act
         var expected = 0;

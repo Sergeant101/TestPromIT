@@ -17,26 +17,11 @@ public class DefinitionDictionary : IDataDefinitionDictionary
         ExistsConnection += SourceConnection + ";database=" + NameDB + ";";  
     }
 
-    public DefinitionDictionary(string _nameDB, string _nameSpCreateDictionary):this(_nameDB)
-    {
-        nameSpCreateDictionary = _nameSpCreateDictionary;
-    }
-
     private readonly string SourceConnection = @"Data Source=.\SQLEXPRESS;Integrated security=True;TrustServerCertificate=true;MultipleActiveResultSets=True";
     private readonly string ExistsConnection = null!;
     private readonly string NameDB;
-    private string nameSpCreateDictionary = "Example";
-    public string NameSpCreateDictionary 
+    public async ValueTask<int> CreateDictionary(string nameSpCreateDictionary ,string nameDict)
     {
-        get => nameSpCreateDictionary;
-        set {nameSpCreateDictionary = value; }
-    }
-    private string NameDictionary;
-    public async ValueTask<int> CreateDictionary(string nameDict)
-    {
-
-        NameDictionary = nameDict;
-
         var retval = 1;
 
             try
@@ -45,19 +30,27 @@ public class DefinitionDictionary : IDataDefinitionDictionary
                 {
                     await sqlConnection.OpenAsync();
 
-                    SqlCommand sqlCommand = new SqlCommand(nameSpCreateDictionary, sqlConnection);
-
-                    sqlCommand.CommandType = CommandType.StoredProcedure;
-
-                    SqlParameter name = new SqlParameter()
+                    try
                     {
-                        ParameterName = "@nameTable",
-                        Value = nameDict
-                    };
+                        using (SqlCommand sqlCommand = new SqlCommand(nameSpCreateDictionary, sqlConnection))
+                        {
+                            sqlCommand.CommandType = CommandType.StoredProcedure;
 
-                    sqlCommand.Parameters.Add(name);
+                            SqlParameter name = new SqlParameter()
+                            {
+                                ParameterName = "@nameTable",
+                                Value = nameDict
+                            };
 
-                    await sqlCommand.ExecuteScalarAsync();
+                            sqlCommand.Parameters.Add(name);
+
+                            await sqlCommand.ExecuteScalarAsync();
+                        }
+                    } 
+                    catch
+                    {
+                        retval = 3;
+                    }
 
                     retval = 0;
                 }
@@ -76,7 +69,7 @@ public class DefinitionDictionary : IDataDefinitionDictionary
         throw new NotImplementedException();
     }
 
-    public async ValueTask<int> RefreshDictionary(string insertWord, int quantityWords)
+    public async ValueTask<int> RefreshDictionary(string NameDictionary, string insertWord, int quantityWords)
     {
         var retval = 1;
 
@@ -166,18 +159,12 @@ public class DefinitionDictionary : IDataDefinitionDictionary
                 }
                  
             }  
-
-            //debug delete
-            System.Console.WriteLine(resultCheckExists);
-            
-            
         }   retval = 0;
 
         return retval;
 
-    }
 
-    private int  CreateTable(string nameTable)
+        int  CreateTable(string nameTable)
         {
             var retval = 1;
 
@@ -220,6 +207,8 @@ public class DefinitionDictionary : IDataDefinitionDictionary
 
             return retval;
         }
+
+    }
 
     
 }

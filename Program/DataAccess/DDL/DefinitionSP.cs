@@ -5,12 +5,12 @@ namespace DDL
 {
     internal partial class DefinitionDB
     {
-        private readonly static string nameSpCreateRoot = "sp_init";
-        private readonly static string nameAddTable = "sp_add_table";
+  
         private readonly static string nameSelectWord = "sp_select_word";
-        public string NameSpCreateRoot {get => nameSpCreateRoot; }
+
+        public readonly static string _nameSpCreateRoot = "sp_init";
         private readonly string spCreateRoot = 
-        @"CREATE PROCEDURE [dbo].["+ nameSpCreateRoot + @"]
+        @"CREATE PROCEDURE [dbo].["+ _nameSpCreateRoot + @"]
 
             @nameTable nvarchar(20)
 
@@ -40,8 +40,9 @@ namespace DDL
 				SET @count = @count + 1
             END";
 
+        public static readonly string _nameSpAddTable = "sp_add_table";
         private readonly string spAddTable = 
-             @"CREATE PROCEDURE [dbo].["+ nameAddTable + @"]
+             @"CREATE PROCEDURE [dbo].["+ _nameSpAddTable + @"]
                 @parentTable NVARCHAR(50),
 				@substring NVARCHAR(10)
                 AS

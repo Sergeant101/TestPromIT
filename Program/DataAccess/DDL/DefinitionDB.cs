@@ -17,11 +17,7 @@ namespace DDL
         {
             NameDB = _name;
             connection += SourceConnection + StartConnection;
-            ExistsConnection += SourceConnection + ";database=" + NameDB + ";";            
-
-            //Debug Delete
-            WriteLine(connection);
-            WriteLine(ExistsConnection);
+            ExistsConnection += SourceConnection + ";database=" + NameDB + ";";
         }
 
         public DefinitionDB(string _path, string _name):this(_name)
