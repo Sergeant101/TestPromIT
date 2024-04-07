@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kwszr0OrCMvarhh7WMYn+8nYznnRu67XoqGoiKXyiYcUQy+Lp4ea+cbDX5SWwgv+6fJQ3NbnHl9VQWhIJqHkKg==",
+  "dgSpecHash": "VCwMZi5FuO877BHjnxIzuOcMzU0jaqa40WuxLV6OhEZ/dwrRf2UCKMmO8kjoGQosT3dkc7MzQmMaBVbVf+647Q==",
   "success": true,
-  "projectFilePath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
+  "projectFilePath": "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\svzag\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\svzag\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

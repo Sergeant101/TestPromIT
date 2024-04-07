@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DefinitionDictionary.Test
-build_property.ProjectDir = C:\_MAIN_\Programs\Code\TestPromIT\Program.Test\DDL.Test\DefinitionDictionary.Test\
+build_property.ProjectDir = d:\Programs\TestPromIT\Program.Test\DDL.Test\DefinitionDictionary.Test\

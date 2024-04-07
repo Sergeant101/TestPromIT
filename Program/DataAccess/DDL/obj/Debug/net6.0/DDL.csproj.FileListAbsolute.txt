@@ -10,3 +10,15 @@ C:\_MAIN_\Programs\Code\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.d
 C:\_MAIN_\Programs\Code\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\refint\DDL.dll
 C:\_MAIN_\Programs\Code\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.pdb
 C:\_MAIN_\Programs\Code\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\ref\DDL.dll
+D:\Programs\TestPromIT\Program\DataAccess\DDL\bin\Debug\net6.0\DDL.deps.json
+D:\Programs\TestPromIT\Program\DataAccess\DDL\bin\Debug\net6.0\DDL.dll
+D:\Programs\TestPromIT\Program\DataAccess\DDL\bin\Debug\net6.0\DDL.pdb
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.csproj.AssemblyReference.cache
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.AssemblyInfoInputs.cache
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.AssemblyInfo.cs
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.csproj.CoreCompileInputs.cache
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.dll
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\refint\DDL.dll
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\DDL.pdb
+D:\Programs\TestPromIT\Program\DataAccess\DDL\obj\Debug\net6.0\ref\DDL.dll

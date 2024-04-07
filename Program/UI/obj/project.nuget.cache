@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4121ZgoWj/fL4D7VukUOrbnMC2w0ekl3/YNPvVRzjjpuV1bZcUD/Q1y0Ro0zstedwjbaOIJ8fjGZYBoDJUQIMw==",
+  "dgSpecHash": "6zs5HrRYDS3u2zBozo8iX4TUyN8QlJKXbpQwcOKW62nDsLxD0Sglx0BIKY7wZ/zRZoMemU1W004+R2aLlXaClQ==",
   "success": true,
-  "projectFilePath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\UI\\UI.csproj",
+  "projectFilePath": "D:\\Programs\\TestPromIT\\Program\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\svzag\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\svzag\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

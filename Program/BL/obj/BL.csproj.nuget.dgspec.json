@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj": {}
+    "D:\\Programs\\TestPromIT\\Program\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj": {
+    "D:\\Programs\\TestPromIT\\Program\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj",
+        "projectUniqueName": "D:\\Programs\\TestPromIT\\Program\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\BL.csproj",
+        "projectPath": "D:\\Programs\\TestPromIT\\Program\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\svzag\\.nuget\\packages\\",
-        "outputPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\BL\\obj\\",
+        "outputPath": "D:\\Programs\\TestPromIT\\Program\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svzag\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj": {
-                "projectPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj"
+              "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj": {
+                "projectPath": "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj"
               }
             }
           }
@@ -49,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,18 +59,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.420\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj": {
+    "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
+        "projectUniqueName": "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
         "projectName": "DDL",
-        "projectPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
+        "projectPath": "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\DDL.csproj",
         "packagesPath": "C:\\Users\\svzag\\.nuget\\packages\\",
-        "outputPath": "C:\\_MAIN_\\Programs\\Code\\TestPromIT\\Program\\DataAccess\\DDL\\obj\\",
+        "outputPath": "D:\\Programs\\TestPromIT\\Program\\DataAccess\\DDL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svzag\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,7 +110,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -118,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.420\\RuntimeIdentifierGraph.json"
         }
       }
     }
